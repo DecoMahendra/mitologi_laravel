@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Container utama */
+.about-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Judul About Us */
+.about-container h1 {
+    background-color: #fff;
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+/* Konten utama */
+.about-content {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 10%;
+    text-align: center;
+    border-radius: 0;
+}
+
+.logo-about {
+    width: 90px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.about-content h2 span {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 100%;
+}

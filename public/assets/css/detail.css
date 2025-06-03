@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 40px;
+}
+
+.detail-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.detail-card {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.harga {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}

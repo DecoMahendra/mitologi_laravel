@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #111;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.slogan {
+    font-size: 12px;
+    font-weight: 500;
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    background-color: #fafafa;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #007bff;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.order-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.hero-image img {
+    width: 340px;
+    height: auto;
+}
+
+/* Categories */
+.categories {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.categories a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.categories a:hover {
+    opacity: 0.7;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.logout-btn {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.profile-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
