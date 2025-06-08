@@ -27,8 +27,10 @@
       <p>Seiring berjalannya waktu <strong>Mitologi</strong> bertranformasi menjadi entitas yang memfasilitasi industri, maupun event organizer<br>
       yang berkaitan dengan merchandise.</p>
     </section>
-    <button class="Back-btn">Back</button>
-  </div>
+    <div class="back-wrapper">
+        <a href="{{ route('dashboard') }}" class="btn-back">← Kembali ke Dashboard</a>
+    </div>
+
 </body>
 </html>
 

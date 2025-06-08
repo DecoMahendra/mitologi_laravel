@@ -27,12 +27,14 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
         $request->session()->regenerate();
 
+
         if (auth()->user()->role === 'admin') {
-            return redirect()->route('admin.dashboard'); // buat rute dashboard admin nanti
+            return redirect()->route('admin.dashboard');
         } else {
-            return redirect()->route('dashboard'); // ini dashboard user biasa
+            return redirect()->route('dashboard');
         }
     }
+
 
 
     /**

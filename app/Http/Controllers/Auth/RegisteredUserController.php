@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'role' => 'user', // default
-            ]);
+        ]);
 
 
         // Jangan login otomatis, tampilkan pop-up dulu

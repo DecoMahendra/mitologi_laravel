@@ -15,6 +15,17 @@
     <section class="register-section">
         <div class="register-box">
             <h2>Daftar Akun</h2>
+
+            @if ($errors->any())
+                <div class="alert alert-danger" style="color: red;">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <input type="text" name="name" placeholder="Nama Lengkap" required>

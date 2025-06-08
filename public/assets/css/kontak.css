@@ -17,18 +17,27 @@ body {
     background-color: #000;
     color: #fff;
     padding: 16px 24px;
+    position: relative;
 }
 
 .logo-header {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: auto;
     object-fit: contain;
-    margin-right: 16px;
+    margin-right: 10px;
+}
+
+/* Membuat teks "Kontak" rata tengah */
+.header-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .contact-header h1 {
     font-size: 26px;
     font-weight: bold;
+    margin: 0;
 }
 
 /* Kontainer Kontak */
@@ -37,7 +46,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 30px;
-    background-color: #fff;
 }
 
 /* Kiri */
@@ -81,6 +89,26 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+.back-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
 }
 
 .footer-thanks h2 {

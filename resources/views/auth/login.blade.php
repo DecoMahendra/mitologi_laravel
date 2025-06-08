@@ -17,10 +17,23 @@
             <div class="brand">Mitologi Clothing</div>
             <h2>Selamat Datang</h2>
             <p>Masuk untuk melanjutkan ke dashboard</p>
+            @if(session('status'))
+                <div style="color: green;">{{ session('status') }}</div>
+            @endif
+
+            @if ($errors->has('email'))
+                <div style="color: red;">{{ $errors->first('email') }}</div>
+            @endif
+
+            @if ($errors->has('password'))
+                <div style="color: red;">{{ $errors->first('password') }}</div>
+            @endif
+
+
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
-                <input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required />
+                <input type="email" name="email" placeholder="Email" />
                 <input type="password" name="password" placeholder="Password" required />
 
                 @if ($errors->any())
@@ -37,39 +50,3 @@
 
         </div>
     </div>
-
-    <script>
-        function login() {
-            const username = document.getElementById("username").value.trim();
-            const password = document.getElementById("password").value.trim();
-
-            const formData = new URLSearchParams();
-            formData.append("username", username);
-            formData.append("password", password);
-
-            fetch("login_process.php", {
-                method: "POST",
-                body: formData
-            })
-
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status === "success") {
-                        localStorage.setItem("role", data.role);
-                        window.location.href = "dashboard.blade.php";
-                    } else {
-                        document.getElementById("error").style.display = "block";
-                        document.getElementById("error").innerText = data.message;
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("Gagal login.");
-                });
-        }
-    </script>
-
-
-</body>
-
-</html>

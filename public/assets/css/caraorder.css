@@ -84,3 +84,23 @@ header h1 {
     font-size: 14px;
     line-height: 1.6;
 }
+
+.back-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}

@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Logo" />
+      <img src="../assets/img/logo-mitologi.png" alt="Logo Mitologi" class="logo-caraorder">
     </div>
     <h1>Cara Mudah Order Baju</h1>
   </header>
@@ -51,5 +51,10 @@
       <p>Selesaikan pembayaran sebelum barang dikirim.</p>
     </div>
   </main>
+
+  <div class="back-wrapper">
+        <a href="{{ route('dashboard') }}" class="btn-back">← Kembali ke Dashboard</a>
+    </div>
+    
 </body>
 </html>

@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Mitologi</title>
-  <<link rel="stylesheet" href="{{ asset('assets/css/kontak.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/kontak.css') }}">
 </head>
 <body>
   <header class="contact-header">
-    <img src="logo-mitologi.png" alt="Logo Mitologi" class="logo-header">
+  <img src="../assets/img/logo-mitologi.png" alt="Logo Mitologi" class="logo-header">
+  <div class="header-content">
     <h1>Kontak</h1>
-  </header>
+  </div>
+</header>
+
 
   <div class="contact-container">
     <div class="contact-left">
@@ -34,9 +37,13 @@
     </div>
 
     <div class="contact-right">
-      <img src="tshirt.png" alt="Kaos Mitologi">
+      <img src="{{ asset('assets/img/tshirt.png') }}" alt="T-shirt">
     </div>
   </div>
+
+  <div class="back-wrapper">
+        <a href="{{ route('dashboard') }}" class="btn-back">← Kembali ke Dashboard</a>
+    </div>
 
   <footer class="footer-thanks">
     <h2>Terima Kasih</h2>
